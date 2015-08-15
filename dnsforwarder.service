@@ -1,0 +1,10 @@
+[Unit]
+Description=A dnsforwarder designed for anti-spoofing
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dnsforwarder -e
+
+[Install]
+WantedBy=multi-user.target
